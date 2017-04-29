@@ -1,0 +1,25 @@
+var namespace = {
+
+_singleton: null,
+
+get singleton() {
+
+if (!this._singleton) {
+
+this._singleton = {
+
+amethod: function() {
+
+console.log("amethod");
+
+}
+
+}
+
+}
+
+return this._singleton;
+
+}
+
+}
